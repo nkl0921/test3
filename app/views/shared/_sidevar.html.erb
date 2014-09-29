@@ -1,0 +1,8 @@
+#coding: utf-8
+
+<h2>最新記事</h2>
+<u1>
+	<% Article.sidebar_articles(5).each do |article| %>
+	<li><%= link_to article.title, article %></li>
+	<% end %>
+</ul>
